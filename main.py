@@ -106,14 +106,17 @@ elif answer == "":
 else:
     print("Incorrect answer! You now suffer from stage 5 dementia. -2!")
     print("The ISS was suprisingly launched recently, 20th of November, 1998!")
-# QUESTION 7
-answer = input("Question 7: The more of me there is, the less of me you'll see. What am I?")
+# QUESTION 8
+answer = input("Question 8: The more of me there is, the less of me you'll see. What am I? ")
 # ANSWER
 if answer == "Darkness":
     print("Great job! Thats correct! +2!")
     score += 2
 elif answer == "":
     print("Listen, I don't know where you're from but where I'M from, we use letters to talk! Not empty space!")
+else:
+    print("Incorrect answer! Your extended family have been robbed. -2!")
+    print("I am darkness! The more you see, the less you see!")
 
 
 
