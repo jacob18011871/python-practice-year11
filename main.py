@@ -1,9 +1,12 @@
 score = 0
+import time
 # ASK THE USER THEIR NAME
 name = input ("What is your name? ")
 # GREET USER AND INTRODUCE THE QUIZ 
 if name == "Mr Scribbles":
     print("That name is awfully familiar...")
+if name == "Kingston":
+    print("Wow! Its THE Kingston! Youre so cool and handsome and sexy")
 if name == "Jack":
     print("MIDGET")
 print ("You have a nice name,",name)
@@ -107,7 +110,7 @@ else:
     print("Incorrect answer! You now suffer from stage 5 dementia. -2!")
     print("The ISS was suprisingly launched recently, 20th of November, 1998!")
 # QUESTION 8
-answer = input("Question 8: The more of me there is, the less of me you'll see. What am I? ")
+answer = input("Question 8: The more of me there is, the less you'll see. What am I? ")
 # ANSWER
 if answer == "Darkness":
     print("Great job! Thats correct! +2!")
@@ -117,9 +120,34 @@ elif answer == "":
 else:
     print("Incorrect answer! Your extended family have been robbed. -2!")
     print("I am darkness! The more you see, the less you see!")
+# QUESTION 9
+answer = input("Question 9: What is the name of the once supercontinent which broke apart ~200 million years ago? ")
+# ANSWER
+if answer == "Pangea":
+    print("Great job! Thats right! +2!")
+    score += 2
+elif answer == "":
+    print("Just answer the question! Is it that hard!? Can't you do anything right?")
+else:
+    print("Incorrect answer! Your heart will stop working in five... four... three... -2!")
+    print("The once supercontinent was named Pangea!")
+    score -= 2
+# THE FINAL QUESTION
+input("You have made it to... drumroll please... THE FINAL QUESTION! This is it! The gateway to success! Tell me, how do you feel? ")
+print("TALKINGS OVER! This is it, the big spin, the jackpot, the FINAL QUESTION! ")
+print("...and that question is...")
+for i in range(15):
+    print("")
 
-
-
+answer = input("What are dreams made of? ")
+# TRAP ANSWER
+if answer == "The unending expansion of the human minds capabilities, dreams are formations of desperate thoughts and memories as your brain attempts to keep itself running, attempting to ignore the fact that the rest of the body could possibly be dead.":
+    print("...")
+    print("You..")
+    suspicion = input("...what did you say your name was again? ")
+    if suspicion == "Mr Scribbles":
+        print("Its... its really you?")
+        
 
 
 
