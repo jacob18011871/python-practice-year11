@@ -5,6 +5,8 @@ name = input ("What is your name? ")
 # GREET USER AND INTRODUCE THE QUIZ 
 if name == "Mr Scribbles":
     print("That name is awfully familiar...")
+if name == "kit":
+    print("british midget...")
 if name == "Kingston":
     print("Wow! Its THE Kingston! Youre so cool and handsome and sexy")
 if name == "Jack":
