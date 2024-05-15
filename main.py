@@ -11,8 +11,10 @@ if name == "Kingston":
     print("Wow! Its THE Kingston! Youre so cool and handsome and sexy")
 if name == "Jack":
     print("MIDGET")
+if name == "jacob":
+    print("you taking your own quiz? weak")
 print ("You have a nice name,",name)
-print ("Welcome! This quiz is just easy general knowledge! Remember, answers are case sensitive!")
+print ("Welcome! This quiz is just easy general knowledge!")
 # ASK THE USER QUESTION
 answer = input ("Question 1: When did Kaiser Wilhelm I die? ")
 # SHOW THEM THE ANSWER
@@ -76,7 +78,7 @@ else:
     score -= 1
 # INTRODUCE DOUBLE POINTS
 input ("You've made it halfway! Do you know what that means? ")
-print ("Who cares! From now on, you will be EARNING and LOSING double the points! Tread carefully!")
+print ("Who cares! From now on, you will be EARNING and LOSING double the points!")
 print("Your current score is", score)
 if score == 5:
     print("You got all of them correct! I'm so proud of you!")
