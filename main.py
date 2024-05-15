@@ -16,9 +16,9 @@ if name == "jacob":
 print ("You have a nice name,",name)
 print ("Welcome! This quiz is just easy general knowledge!")
 # ASK THE USER QUESTION
-answer = input ("Question 1: When did Kaiser Wilhelm I die? ")
+answer = input ("Question 1: When did Kaiser Wilhelm I die? ").lower()
 # SHOW THEM THE ANSWER
-if answer == "1888":
+if answer == "1888".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
@@ -29,9 +29,9 @@ else:
     score -= 1
 
 # ASK THE USER QUESTION 2
-answer = input ("Question 2: How long did the Cold War last? ")
+answer = input ("Question 2: How long did the Cold War last? ").lower()
 # SHOW THEM THE ANSWER
-if answer == "45 years":
+if answer == "45 years".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
@@ -41,9 +41,9 @@ else:
     print("The cold war lasted '45 years'.")
     score -= 1
 # ASK THE USER QUESION 3
-answer = input ("Question 3: When did the NZ Labour Party first come into power? ")
+answer = input ("Question 3: When did the NZ Labour Party first come into power? ").lower()
 # SHOW THEM THE ANSWER
-if answer == "1935":
+if answer == "1935".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
@@ -53,9 +53,9 @@ else:
     print("The NZ Labour Party first came into power in 1935!")
     score -= 1
 # ASK THE USER QUESTION 4
-answer = input ("Question 4: Give me the chemical formula for magnesium bromide. ")
+answer = input ("Question 4: Give me the chemical formula for magnesium bromide. ").lower()
 # SHOW THEM THE ANSWER
-if answer == "MgBr2":
+if answer == "MgBr2".lower():
     print("Great job! Thats right! +1")
     score += 1
 elif answer == "":
@@ -65,9 +65,9 @@ else:
     print("The formula is: MgBr2")
     score -= 1
 # QUESTION 5
-answer = input ("Question 5: What year was television invented? ")
+answer = input ("Question 5: What year was television invented? ").lower()
 # ANSWER
-if answer == "1927":
+if answer == "1927".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
@@ -92,9 +92,9 @@ if score < 4:
     print("You fell behind! You gotta try your hardest! I believe in you! Good luck!")
 
 # QUESTION 6
-answer = input ("Question 6: How many lights exactly are in the KHCL? ")
+answer = input ("Question 6: How many lights exactly are in the KHCL? ").lower()
 # ANSWER
-if answer == "155":
+if answer == "155".lower():
     print("Great job! Thats correct! +2!")
     score += 2
 elif answer == "":
@@ -104,9 +104,9 @@ else:
     print("There are 155 lights in the KHCL! (Dont fact check that pwease)")
     score -= 2
 # QUESTION 7
-answer = input("Question 7: What is the exact date the International Space Station set up? Use this formula: xth of month, 19XX ")
+answer = input("Question 7: What is the exact date the International Space Station set up? Use this formula: xth of month, 19XX ").lower()
 # ANSWER
-if answer == "20th of November, 1998":
+if answer == "20th of November, 1998".lower():
     print("Great job! Thats right! +2")
 elif answer == "":
     print("Just ANSWER the BLOODY QUESTION")
@@ -114,9 +114,9 @@ else:
     print("Incorrect answer! You now suffer from stage 5 dementia. -2!")
     print("The ISS was suprisingly launched recently, 20th of November, 1998!")
 # QUESTION 8
-answer = input("Question 8: The more of me there is, the less you'll see. What am I? ")
+answer = input("Question 8: The more of me there is, the less you'll see. What am I? ").lower()
 # ANSWER
-if answer == "Darkness":
+if answer == "Darkness".lower():
     print("Great job! Thats correct! +2!")
     score += 2
 elif answer == "":
@@ -125,13 +125,13 @@ else:
     print("Incorrect answer! Your extended family have been robbed. -2!")
     print("I am darkness! The more you see, the less you see!")
 # QUESTION 9
-answer = input("Question 9: What is the name of the once supercontinent which broke apart ~200 million years ago? ")
+answer = input("Question 9: What is the name of the once supercontinent which broke apart ~200 million years ago? ").lower()
 # ANSWER
-if answer == "Pangea":
+if answer == "Pangea".lower():
     print("Great job! Thats right! +2!")
     score += 2
 elif answer == "":
-    print("Just answer the question! Is it that hard!? Can't you do anything right?")
+    print("Just answer the question! Is it that hard?")
 else:
     print("Incorrect answer! Your heart will stop working in five... four... three... -2!")
     print("The once supercontinent was named Pangea!")
@@ -143,10 +143,19 @@ print("...and that question is...")
 for i in range(15):
     print("")
 
-answer = input("What are dreams made of? ")
+answer = input("If x is the average (arithmetic mean) of 𝑚 and 9, y is the average of 2 𝑚 and 15, and z is the average of 3 𝑚 and 18, what is the average of x, y, and z in terms of 𝑚 ?").lower()
 # ANSWER
-if answer == "The unending expansion of the human minds capabilities, dreams are formations of desperate thoughts and memories as your brain attempts to keep itself running, attempting to ignore the fact that the rest of the body could possibly be dead.":
-    print("wow you got it right")
+if answer == "m+7" or answer == "m + 7".lower():
+    print("Great job! Thats right! +2")
+    score += 2
+elif answer == "":
+    print("its just simple math? cmon!")
+else:
+    print("Incorrect answer! Your home country will be ruthlessly bombed. -2!")
+    print("The answer is m + 7!")
+# GOODBYE
+input("You made it! Despite all odds, you actually made it! How do you feel? ")
+
         
 
 
@@ -166,3 +175,13 @@ if answer == "The unending expansion of the human minds capabilities, dreams are
 
 
 # END QUIZ
+# test area
+
+
+
+
+
+
+
+tries = input("balahslasdlbasdlkbas")
+tries = tries - 1
