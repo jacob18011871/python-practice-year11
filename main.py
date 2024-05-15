@@ -142,7 +142,7 @@ for i in range(15):
     print("")
 
 answer = input("What are dreams made of? ")
-# TRAP ANSWER
+# ANSWER
 if answer == "The unending expansion of the human minds capabilities, dreams are formations of desperate thoughts and memories as your brain attempts to keep itself running, attempting to ignore the fact that the rest of the body could possibly be dead.":
     print("wow you got it right")
         
