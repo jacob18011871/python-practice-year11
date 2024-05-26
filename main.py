@@ -22,7 +22,8 @@ if answer == "1888".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
-    print("You there?")
+    print("You insult me by not answering my questions.")
+    score -= 1
 else:
     print("Incorrect answer! You have lost control of your legs as consequence. -1!")
     print("Kaiser Wilhelm died in 1888!")
@@ -35,7 +36,8 @@ if answer == "45 years".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
-    print("Hello? We have a quiz to finish!")
+    print("You insult me by not answering my questions.")
+    score -= 1
 else:
     print("Incorrect answer! You have lost control of your arms as consequence. -1!")
     print("The cold war lasted '45 years'.")
@@ -47,7 +49,8 @@ if answer == "1935".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
-    print("Where are you? I can't see you!")
+    print("You insult me by not answering my questions.")
+    score -= 1
 else:
     print("Incorrect answer! You have lost your cerebral cortex as consequence. -1!")
     print("The NZ Labour Party first came into power in 1935!")
@@ -59,7 +62,8 @@ if answer == "MgBr2".lower():
     print("Great job! Thats right! +1")
     score += 1
 elif answer == "":
-    print("It wasn't that difficult, was it?")
+    print("You insult me by not answering my questions.")
+    score -= 1
 else:
     print("Incorrect answer! You have lost your left lung as consequence. -1!")
     print("The formula is: MgBr2")
@@ -71,7 +75,8 @@ if answer == "1927".lower():
     print("Great job! Thats right! +1!")
     score += 1
 elif answer == "":
-    print("Remember, you have to type something...")
+    print("You insult me by not answering my questions.")
+    score -= 1
 else:
     print("Incorrect answer! Your heart will be sold tomorrow at 3:15pm as consequence. -1!")
     print("Television was invented in 1927!")
@@ -98,21 +103,23 @@ if answer == "155".lower():
     print("Great job! Thats correct! +2!")
     score += 2
 elif answer == "":
-    print("I know you're there! You need to answer!")
+    print("You insult me by not answering my questions.")
+    score -= 2
 else:
     print("Incorrect answer! Say goodbye to your parents! -2!")
     print("There are 155 lights in the KHCL! (Dont fact check that pwease)")
     score -= 2
 # QUESTION 7
-answer = input("Question 7: What is the exact date the International Space Station set up? Use this formula: xth of month, 19XX ").lower()
+answer = input("What is the most useful painkiller? ").lower()
 # ANSWER
-if answer == "20th of November, 1998".lower():
+if answer == "Naproxen".lower():
     print("Great job! Thats right! +2")
 elif answer == "":
-    print("Just ANSWER the BLOODY QUESTION")
+    print("You insult me by not answering my questions.")
+    score -= 2
 else:
     print("Incorrect answer! You now suffer from stage 5 dementia. -2!")
-    print("The ISS was suprisingly launched recently, 20th of November, 1998!")
+    print("The answer is Naproxen... wow!")
 # QUESTION 8
 answer = input("Question 8: The more of me there is, the less you'll see. What am I? ").lower()
 # ANSWER
@@ -120,7 +127,8 @@ if answer == "Darkness".lower():
     print("Great job! Thats correct! +2!")
     score += 2
 elif answer == "":
-    print("Listen, I don't know where you're from but where I'M from, we use letters to talk! Not empty space!")
+    print("You insult me by not answering my questions.")
+    score -= 2
 else:
     print("Incorrect answer! Your extended family have been robbed. -2!")
     print("I am darkness! The more you see, the less you see!")
@@ -131,7 +139,8 @@ if answer == "Pangea".lower():
     print("Great job! Thats right! +2!")
     score += 2
 elif answer == "":
-    print("Just answer the question! Is it that hard?")
+    print("You insult me by not answering my questions.")
+    score -= 2
 else:
     print("Incorrect answer! Your heart will stop working in five... four... three... -2!")
     print("The once supercontinent was named Pangea!")
@@ -140,7 +149,7 @@ else:
 input("You have made it to... drumroll please... THE FINAL QUESTION! This is it! The gateway to success! Tell me, how do you feel? ")
 print("TALKINGS OVER! This is it, the big spin, the jackpot, the FINAL QUESTION! ")
 print("...and that question is...")
-for i in range(15):
+for i in range(8):
     print("")
 
 answer = input("If x is the average (arithmetic mean) of 𝑚 and 9, y is the average of 2 𝑚 and 15, and z is the average of 3 𝑚 and 18, what is the average of x, y, and z in terms of 𝑚 ?").lower()
@@ -149,12 +158,16 @@ if answer == "m+7" or answer == "m + 7".lower():
     print("Great job! Thats right! +2")
     score += 2
 elif answer == "":
-    print("its just simple math? cmon!")
+    print("You insult me by not answering my questions.")
+    score -= 2
 else:
     print("Incorrect answer! Your home country will be ruthlessly bombed. -2!")
     print("The answer is m + 7!")
 # GOODBYE
-input("You made it! Despite all odds, you actually made it! How do you feel? ")
+input("Congratulations, you finally finished the quiz! Actually... You know what? Bonus question! What is your final score? ")
+if answer == score:
+    print("Thats right! Your score is", score, "!")
+    print("")
 
         
 
