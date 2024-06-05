@@ -167,7 +167,7 @@ else:
 input("Congratulations, you finally finished the quiz! Actually... You know what? Bonus question! What is your final score? ")
 if answer == score:
     print("Thats right! Your score is", score, "!")
-    print("")
+    print("guh ill finish later i need sleep")
 
         
 
